@@ -1,0 +1,23 @@
+/* Correct usage of calc() */
+.correct-width {
+  width: calc(100% - 10px);
+}
+
+.correct-height {
+  height: calc((50% - 10px) + 20px);
+}
+
+/* Using different units consistently */
+.consistent-units {
+  width: calc(50% - 2em);
+}
+
+/*Avoid mixing units without careful consideration*/
+.mixedUnits {
+  width: calc(100px + 50%); /*Potentially problematic depending on context*/
+}
+
+/* Example of how to fix it using only one unit type*/
+.fixedMixedUnits {
+  width: calc(150px); /*Fixed*/
+}
